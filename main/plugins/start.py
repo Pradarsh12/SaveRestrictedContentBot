@@ -63,7 +63,7 @@ async def start(event):
        # start help Message
 @Drone.on(events.NewMessage(pattern="^/help$"))
 async def search(event):
-    await event.reply('<b><u>- وات العامـه المقيـدة :</b></u>\nفقط ارسل لي رابط المنشور وسأقوم بجلبه في الحال.\n\n<b><u>- للقنـوات الخاصـه المقيـدة :</b></u>\nاولاً ارسل لي رابط القناة حتى استطيع الانضمام اليهـا ثم بعد ذلك ارسل لي رابط المنشور وسأقوم بجلبه في الحال.', parse_mode="HTML")
+    await event.reply('<b><u>- Send me the post link and I will get it right :</b></u>\n For restricted private channels.\n\n<b><u>- For restricted private channels :</b></u>\n First send me the channel link so I can join it and then send me the post link I'll fetch it right away.', parse_mode="HTML")
     #end help Message
 
 
