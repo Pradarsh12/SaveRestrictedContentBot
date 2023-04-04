@@ -6,7 +6,7 @@ from telethon import events, Button
     
 S = '/' + 's' + 't' + 'a' + 'r' + 't'
 
-st = "**- HELLO SIR 🫂,\n\n- I AM SAVE RESTRICTED CONTENT BOT.**\n**- ارسـل لي رابـط المنشـور من القناة سواء كانت عامـة او خاصـه.**\n**- اضغـط /help للمسـاعـدة.**"
+st = "**- HELLO SIR 🫂,\n\n- I AM SAVE RESTRICTED CONTENT BOT.**\n**- Send me the link of the post from the channel, whether it is public or private.**\n**- PRESS /help FOR HELP.**"
 
 @Drone.on(events.callbackquery.CallbackQuery(data="set"))
 async def sett(event):    
@@ -48,8 +48,8 @@ async def remt(event):
 async def start(event):
     await event.reply(f'{st}', 
                       buttons=[
-                        [Button.url("قنـاة السـورس", url="https://t.me/ZedThon")],
-                        [Button.url("مطـور البـوت", url="https://t.me/zzzzl1l")],
+                        [Button.url("CHANNEL LINK", url="https://t.me/mittalbots")],
+                        [Button.url("OWNER ID", url="https://t.me/soonbotmaker0")],
                     ])
     try:
         await Bot.start()
@@ -63,7 +63,7 @@ async def start(event):
        # start help Message
 @Drone.on(events.NewMessage(pattern="^/help$"))
 async def search(event):
-    await event.reply('<b><u>- للقنـوات العامـه المقيـدة :</b></u>\nفقط ارسل لي رابط المنشور وسأقوم بجلبه في الحال.\n\n<b><u>- للقنـوات الخاصـه المقيـدة :</b></u>\nاولاً ارسل لي رابط القناة حتى استطيع الانضمام اليهـا ثم بعد ذلك ارسل لي رابط المنشور وسأقوم بجلبه في الحال.', parse_mode="HTML")
+    await event.reply('<b><u>- وات العامـه المقيـدة :</b></u>\nفقط ارسل لي رابط المنشور وسأقوم بجلبه في الحال.\n\n<b><u>- للقنـوات الخاصـه المقيـدة :</b></u>\nاولاً ارسل لي رابط القناة حتى استطيع الانضمام اليهـا ثم بعد ذلك ارسل لي رابط المنشور وسأقوم بجلبه في الحال.', parse_mode="HTML")
     #end help Message
 
 
